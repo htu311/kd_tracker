@@ -3,7 +3,7 @@ import pandas as pd
 import requests
 from urllib.error import URLError
 #st.title('🐟🐦🐍🐢🐹🐰🐷🐮🐑🐴 Veterinary Clinic 🐶🐱🐭🐾🐧🐘🦒🐨🐼🐒')
-st.title('🐟🐦🐮🐑🐴 Veterinary Clinic 🐶🐱🐭🐾🐒')
+st.title('🐶🐴 Veterinary Clinic 🐮🐱')
 st.header('Vet Services')
 st.text('🥗 Home Visit')
 st.text('🥗 General Health Check up')
