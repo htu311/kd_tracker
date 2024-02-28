@@ -1,14 +1,14 @@
-import streamlit
+import streamlit as st
 import pandas
 import requests
 from urllib.error import URLError
-streamlit.title('Dr. Kunal Manohar Devlekar Tracker')
+st.title('Dr. Kunal Manohar Devlekar Tracker')
 
-streamlit.header('Vet Services')
-streamlit.text('🥗 Home Visit')
-streamlit.text('🥗 General Health Check up')
+st.header('Vet Services')
+st.text('🥗 Home Visit')
+st.text('🥗 General Health Check up')
 
-streamlit.header('🍌🥭 Appointment Slots 🥝🍇')
+st.header('🍌🥭 Appointment Slots 🥝🍇')
 
 
 def write_to_excel(data):
