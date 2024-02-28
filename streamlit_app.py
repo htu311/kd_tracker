@@ -23,7 +23,7 @@ def main():
 
     # Create a form for user input
     st.subheader("Enter Data")
-    col1, col2 ,col3 ,col4 = st.columns([1, 16])
+    col1, col2 ,col3 ,col4 = st.columns([1, 4])
     with col1:
         column1_data = st.text_input("Date", "")
     with col2:
