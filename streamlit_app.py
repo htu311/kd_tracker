@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 import requests
 from urllib.error import URLError
-st.title('Dr. Kunal Manohar Devlekar Tracker')
+st.title('Veterniatry')
 
 st.header('Vet Services')
 st.text('🥗 Home Visit')
