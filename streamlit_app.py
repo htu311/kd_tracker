@@ -25,7 +25,7 @@ def main():
     st.subheader("Enter Data")
     Date, Description ,Amount ,Comments = st.columns([1, 16])
     with Date:
-        column1_data = st.date_input("Date", "")
+        column1_data = st.text_input("Date", "")
     with Description:
         column2_data = st.text_input("Description", "")
     with Amount:
