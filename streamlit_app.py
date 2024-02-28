@@ -42,7 +42,7 @@ def main():
         #file_path = write_to_excel(data)
 
         # Display a link to download the Excel file
-        st.success(f"Data written to Excel file. [Download Excel file]({file_path})")
+        #st.success(f"Data written to Excel file. [Download Excel file]({file_path})")
 
 if __name__ == "__main__":
     main()
