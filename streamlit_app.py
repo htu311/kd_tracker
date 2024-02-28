@@ -36,8 +36,10 @@ def main():
             "Column 2": [column2_data]
         })
 
+        streamlit.dataframe(data)
+        
         # Write data to Excel file
-        file_path = write_to_excel(data)
+        #file_path = write_to_excel(data)
 
         # Display a link to download the Excel file
         st.success(f"Data written to Excel file. [Download Excel file]({file_path})")
