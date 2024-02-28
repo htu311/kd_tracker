@@ -1,5 +1,5 @@
 import streamlit as st
-import pandas
+import pandas as pd
 import requests
 from urllib.error import URLError
 st.title('Dr. Kunal Manohar Devlekar Tracker')
@@ -36,7 +36,7 @@ def main():
             "Column 2": [column2_data]
         })
 
-        streamlit.dataframe(data)
+        st.dataframe(data)
         
         # Write data to Excel file
         #file_path = write_to_excel(data)
