@@ -23,21 +23,24 @@ def main():
 
     # Create a form for user input
     st.subheader("Enter Data")
-    col1, col2, col3 = st.columns([1, 4, 2])
+    col1, col2, col3, col4 = st.columns([1, 4, 2, 5])
     with col1:
         column1_data = st.text_input("Date", "")
     with col2:
-        column2_data = st.text_input("Column 2", "")
+        column2_data = st.text_input("Description", "")
     with col3:
-        column3_data = st.text_input("Column 3", "")
-
+        column3_data = st.text_input("Amount", "")
+    with col4:
+        column4_data = st.text_input("Comments", "")
        
     # Create a button to submit the data
     if st.button("Submit"):
         # Create a DataFrame from the user input
         data = pd.DataFrame({
             "Date": [column1_data],
-            "Column 2": [column2_data]
+            "Description": [column2_data],
+            "Amount": [column3_data],
+            "Comments": [column4_data]
         })
 
         st.dataframe(data)
