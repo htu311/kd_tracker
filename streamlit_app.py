@@ -25,7 +25,7 @@ def main():
     st.subheader("Enter Data")
     col1, col2 = st.columns([1, 4])
     with col1:
-        column1_data = st.text_input("Column 1", "")
+        column1_data = st.text_input("Date", "")
     with col2:
         column2_data = st.text_input("Column 2", "")
 
@@ -33,7 +33,7 @@ def main():
     if st.button("Submit"):
         # Create a DataFrame from the user input
         data = pd.DataFrame({
-            "Column 1": [column1_data],
+            "Date": [column1_data],
             "Column 2": [column2_data]
         })
 
